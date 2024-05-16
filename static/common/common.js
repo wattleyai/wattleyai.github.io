@@ -82,8 +82,8 @@ window = (function (globe = {}) {
             }
         }
         </script>`);
-        _this.document.getElementById("#test").onload = test;
-        _this.document.getElementById("#_backgroundinit").onload = _this._backgroundinit
+        _this.document.getElementById("test").onload = test;
+        _this.document.getElementById("_backgroundinit").onload = _this._backgroundinit
         _this.appendCode(`<link rel="stylesheet" href="./static/css/index.css?v=0.0.1&t=${_this.times}">`);
     };
     _this._init();

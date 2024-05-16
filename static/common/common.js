@@ -73,6 +73,14 @@ window = (function (globe = {}) {
         _this._backgroundinit();
         //添加公共的css和js
         _this.appendCode(`<script src="https://cdn.tailwindcss.com/3.4.1"><\/script>`);
+        _this.appendCode(`<script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+            }
+        }
+        </script>`);
         _this.appendCode(`<link rel="stylesheet" href="./static/css/index.css?v=0.0.1&t=${_this.times}">`);
     };
     _this._init();

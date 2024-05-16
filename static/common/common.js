@@ -1,5 +1,4 @@
-!(function (globe = {}) {
-    "use strict";
+window = (function (globe = {}) {
     let _this = globe || new Object({});
     _this.times = +(new Date);
     _this.document ? _this.document : _this.document = window.document;
@@ -24,4 +23,5 @@
 
     };
     _this._init();
+    return _this;
 })(window);

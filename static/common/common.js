@@ -67,12 +67,13 @@ window = (function (globe = {}) {
 
         init();
         animate();
+        console.log("background draw success");
     };
 
     _this._init = function () {
         //添加公共的css和js
         _this.appendCode(`<script src="https://cdn.tailwindcss.com/3.4.1"><\/script>`);
-        _this.appendCode(`<script type="importmap" onload="_this._backgroundinit();">
+        _this.appendCode(`<script type="importmap" onload="window._backgroundinit();">
         {
             "imports": {
                 "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",

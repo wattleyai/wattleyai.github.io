@@ -6,7 +6,7 @@ window = (function (globe = {}) {
         const mobileRegex = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i;
     
         if (mobileRegex.test(userAgent)) {
-            window.location.href = redirectUrl;
+            window.location.href = redirectUrlH5;
         }else{
             window.location.href = redirectUrlPC;
         }

@@ -18,9 +18,8 @@ window = (function (globe = {}) {
 
     _this._init = function() {
         //添加公共的css和js
+        _this.appendCode(`<script src="https://cdn.tailwindcss.com/3.4.1"><\/script>`);
         _this.appendCode(`<link rel="stylesheet" href="./static/css/index.css?v=0.0.1&t=${_this.times}">`);
-        // this.appendCode(`<script src="./static/js/index.js?v=0.0.1&t=${times}"><\/script>`);
-
     };
     _this._init();
     return _this;

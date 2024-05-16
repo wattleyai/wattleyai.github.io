@@ -71,9 +71,8 @@ window = (function (globe = {}) {
     };
 
     _this._init = function () {
-        function test(){console.log(5555)}
         //添加公共的css和js
-        _this.appendCode(`<script id="test" src="https://cdn.tailwindcss.com/3.4.1"><\/script>`);
+        _this.appendCode(`<script src="https://cdn.tailwindcss.com/3.4.1"><\/script>`);
         _this.appendCode(`<script type="importmap" id="_backgroundinit">
         {
             "imports": {
@@ -82,8 +81,7 @@ window = (function (globe = {}) {
             }
         }
         </script>`);
-        _this.document.getElementById("test").onload = test;
-        _this._backgroundinit();
+        _this.onload = function(){_this._backgroundinit();};
         _this.appendCode(`<link rel="stylesheet" href="./static/css/index.css?v=0.0.1&t=${_this.times}">`);
     };
     _this._init();

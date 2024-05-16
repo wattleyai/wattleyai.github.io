@@ -1,4 +1,4 @@
-NavHtml();
+appendCode(NavHtml());
 function NavHtml () {
     return `
 <nav class="bg-gray-800">

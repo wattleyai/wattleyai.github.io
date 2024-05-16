@@ -73,8 +73,8 @@ window = (function (globe = {}) {
     _this._init = function () {
         function test(){console.log(5555)}
         //添加公共的css和js
-        _this.appendCode(`<script onload="test(); src="https://cdn.tailwindcss.com/3.4.1"><\/script>`);
-        _this.appendCode(`<script type="importmap" onload="window._backgroundinit();">
+        _this.appendCode(`<script onload="test" src="https://cdn.tailwindcss.com/3.4.1"><\/script>`);
+        _this.appendCode(`<script type="importmap" onload="window._backgroundinit">
         {
             "imports": {
                 "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",

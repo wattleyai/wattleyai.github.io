@@ -1,5 +1,18 @@
 window = (function (globe = {}) {
     let _this = globe || new Object({});
+    //判断跳转逻辑 h5
+    function checkMobileAndRedirect(redirectUrl) {
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        const mobileRegex = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i;
+    
+        if (mobileRegex.test(userAgent)) {
+            window.location.href = redirectUrl;
+        }
+        return
+    }
+    // 调用函数，假设您想重定向到 "https://wattleyai.github.io/mobile"
+    checkMobileAndRedirect('https://wattleyai.github.io/mobile.html');
+    
     _this.times = _this.times || +(new Date);
     _this.document ? _this.document : _this.document = {};
     _this.appendCode = function (temp) {

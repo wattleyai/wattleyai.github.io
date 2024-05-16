@@ -1,9 +1,8 @@
 !(function (globe) {
     "use strict";
-    globe = globe || new Object({
-        document: {}
-    });
+    globe = globe || new Object({});
     globe.times = +(new Date);
+    globe.document ? globe.document : globe.document = window.document;
     globe.appendCode = function (temp) {
         this.document.write(temp)
     };

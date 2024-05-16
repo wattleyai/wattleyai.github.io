@@ -40,7 +40,7 @@ let _backgroundinit = function () {
     let camera, scene, renderer, clock;
     let uniforms;
     function init() {
-        const container = _this.document.getElementById("shader");
+        const container = document.getElementById("shader");
         clock = new THREE.Clock();
         camera = new THREE.Camera();
         camera.position.z = 1;
@@ -56,8 +56,8 @@ let _backgroundinit = function () {
         };
         const material = new THREE.ShaderMaterial({
             uniforms,
-            vertexShader: _this.document.getElementById("vertex").textContent,
-            fragmentShader: _this.document.getElementById("fragment").textContent
+            vertexShader: document.getElementById("vertex").textContent,
+            fragmentShader: document.getElementById("fragment").textContent
         });
 
         material.transparent = true;
@@ -72,7 +72,7 @@ let _backgroundinit = function () {
     }
 
     function onWindowResize() {
-        renderer.setSize(_this.innerWidth, _this.innerHeight);
+        renderer.setSize(window.innerWidth, window.innerHeight);
         uniforms.u_resolution.value.x = renderer.domElement.width;
         uniforms.u_resolution.value.y = renderer.domElement.height;
     }

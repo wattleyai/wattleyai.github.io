@@ -1,4 +1,4 @@
-(!function (globe) {
+!(function (globe) {
     "use strict";
     globe = globe || new Object({
         document: {}
@@ -24,5 +24,6 @@
         this.appendCode(`<link rel="stylesheet" href="./static/css/index.css?v=0.0.1&t=${this.times}">`);
         // this.appendCode(`<script src="./static/js/index.js?v=0.0.1&t=${times}"><\/script>`);
 
-    }
+    };
+    globe._init();
 })(window);

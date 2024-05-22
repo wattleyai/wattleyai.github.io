@@ -11,17 +11,17 @@
     <script>window.times = +(new Date)</script>
     <script>document.write(`<script src="./static/common/common.js?v=0.0.1&t=${times}"><\/script>`)</script>
     <script type="text/javascript">
-        jQuery(document).ready(function($) {
-            $(".scroll").click(function(event){
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
                 event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1200);
             });
         });
     </script>
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
     <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
 
-    
+
 </head>
 
 <body>
@@ -29,180 +29,197 @@
         <!-- <script>appendCode(`<script src="./temp/NavHtml.js?v=0.0.1&t=${times}"><\/script>`);</script> -->
         <div class="header">
             <div class="container">
-              <div class="logo"> <a href="/index.html"><img src="./static/images/logo.png" alt="Nova"></a> </div>
-              <div class="menu"> <a class="toggleMenu" href="#"><img src="./static/images/nav_icon.png" alt="" /> </a>
-                <ul class="nav" id="nav">
-                  <li class="current"><a href="/index.html">公司团队</a></li>
-                  <li><a href="#about">关于我们</a></li>
-                  <li><a href="#services">小伙伴们</a></li>
-                  <!-- <li><a href="blog.html">项目介绍</a></li> -->
-                  <li><a href="#contact">联系我们</a></li>
-                  <div class="clear"></div>
-                </ul>
-                <script>appendCode(`<script src="./static/common/responsive-nav.js?v=0.0.1&t=${times}"><\/script>`);</script>
-              </div>
-              <div class="clearfix"> </div>
+                <div class="logo"> <a href="/index.html"><img src="./static/images/logo.png" alt="Nova"></a> </div>
+                <div class="menu"> 
+                    <a class="toggleMenu" href="#"><img src="./static/images/nav_icon.png" alt="" /> </a>
+                    <ul class="nav" id="nav">
+                        <li class="current"><a href="/index.html">公司团队</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                        <li><a href="#services">小伙伴们</a></li>
+                        <!-- <li><a href="blog.html">项目介绍</a></li> -->
+                        <li><a href="#contact">联系我们</a></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <script>appendCode(`<script src="./static/common/responsive-nav.js?v=0.0.1&t=${times}"><\/script>`);</script>
+                </div>
+                <div class="clearfix"> </div>
             </div>
         </div>
-        
+
         <div class="banner text-center">
             <div class="container">
-              <div class="banner-info">
-                <h1>武汉慕容软件科技有限公司</h1>
-                <p>专业互联网10+年开发各类型项目案例.<br>
-                  人工智能、物联网、sass云服务、商城开发</p>
-                <label class="page-scroll"><a class="banner-btn class scroll" href="#feature"><i class="fa fa-angle-double-down fa-4x"></i></a></label>
-              </div>
+                <div class="banner-info">
+                    <h1>武汉慕容软件科技有限公司</h1>
+                    <p>专业互联网10+年开发各类型项目案例.<br>
+                        人工智能、物联网、sass云服务、商城开发</p>
+                    <label class="page-scroll"><a class="banner-btn class scroll" href="#feature"><i class="fa fa-angle-double-down fa-4x"></i></a></label>
+                </div>
             </div>
-          </div>
-          <div class="main" style="user-select: none;">
-          <div class="content_white" id="about">
-            <h2>关于我们</h2>
-            <p>致力于各种开发语言 上十位开发小伙伴一起为您服务.</p>
-          </div>
-          <div class="featured_content" id="feature">
+        </div>
+        <div class="main" style="user-select: none;">
+            <div class="content_white" id="about">
+                <h2>关于我们</h2>
+                <p>致力于各种开发语言 上十位开发小伙伴一起为您服务.</p>
+            </div>
+            <div class="featured_content" id="feature">
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md-3 feature_grid1"> <i class="fa fa-cloud-download fa-3x"></i>
+                            <h3 class="m_1"><a href="#">JAVA</a></h3>
+                            <p class="m_2">springbootX、springcloud、Mybatisplus.</p>
+                            <a href="#" class="feature_btn">More</a>
+                        </div>
+                        <div class="col-md-3 feature_grid1"> <i class="fa fa-shield fa-3x"></i>
+                            <h3 class="m_1"><a href="#">PHP</a></h3>
+                            <p class="m_2">Thinkphp6.X、Laravel6、swoole、composer.</p>
+                            <a href="#" class="feature_btn">More</a>
+                        </div>
+                        <div class="col-md-3 feature_grid1"> <i class="fa fa-flask fa-3x"></i>
+                            <h3 class="m_1"><a href="#">JAVSCRIPT</a></h3>
+                            <p class="m_2">Vue、React、es6、html5+css3、小程序.</p>
+                            <a href="#" class="feature_btn">More</a>
+                        </div>
+                        <div class="col-md-3 feature_grid2"> <i class="fa fa-bar-chart fa-3x"></i>
+                            <h3 class="m_1"><a href="#">FLUTTER</a></h3>
+                            <p class="m_2">Uniapp、IOS、Android、ReactNative.</p>
+                            <a href="#" class="feature_btn">More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="container">
-              <div class="row text-center">
-                <div class="col-md-3 feature_grid1"> <i class="fa fa-cloud-download fa-3x"></i>
-                  <h3 class="m_1"><a href="#">JAVA</a></h3>
-                  <p class="m_2">springbootX、springcloud、Mybatisplus.</p>
-                  <a href="#" class="feature_btn">More</a> </div>
-                <div class="col-md-3 feature_grid1"> <i class="fa fa-shield fa-3x"></i>
-                  <h3 class="m_1"><a href="#">PHP</a></h3>
-                  <p class="m_2">Thinkphp6.X、Laravel6、swoole、composer.</p>
-                  <a href="#" class="feature_btn">More</a> </div>
-                <div class="col-md-3 feature_grid1"> <i class="fa fa-flask fa-3x"></i>
-                  <h3 class="m_1"><a href="#">JAVSCRIPT</a></h3>
-                  <p class="m_2">Vue、React、es6、html5+css3、小程序.</p>
-                  <a href="#" class="feature_btn">More</a> </div>
-                <div class="col-md-3 feature_grid2"> <i class="fa fa-bar-chart fa-3x"></i>
-                  <h3 class="m_1"><a href="#">FLUTTER</a></h3>
-                  <p class="m_2">Uniapp、IOS、Android、ReactNative.</p>
-                  <a href="#" class="feature_btn">More</a> </div>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="content_white" id="services">
-              <h2>开发小伙伴们</h2>
-              <!-- <p>No cum agam appareat vituperata ateum iusto paulo dignissim</p> -->
-            </div>
-            <div class="testimonial">
-              <div class="row testimonial_top">
-                <div class="col-md-6">
-                  <ul class="test_box">
-                    <li class="test_img"><img src="https://picsum.photos/200/200?p=1" class="img-responsive" alt=""/> </li>
-                    <li class="test_desc">
-                      <h4><a href="#">程工 Java工程师</a></h4>
-                      <p>9年开发工作经验,精通java,具有spring全家桶开发功能经验,曾就职于北京某大厂,具有丰富的开发经验、性能优化、高并发、架构设计、大数据等技术栈.</p>
-                    </li>
-                    <div class="clearfix"> </div>
-                  </ul>
+                <div class="content_white" id="services">
+                    <h2>开发小伙伴们</h2>
+                    <!-- <p>No cum agam appareat vituperata ateum iusto paulo dignissim</p> -->
                 </div>
-                <div class="col-md-6">
-                  <ul class="test_box">
-                    <li class="test_img"><img src="https://picsum.photos/200/200?p=2" class="img-responsive" alt=""/> </li>
-                    <li class="test_desc">
-                      <h4><a href="#">张工 Java工程师</a></h4>
-                      <p>7年开发工作经验,精通java,具有spring全家桶开发功能经验,目前就职于武汉某大厂,能胜任目前所有类型开发.</p>
-                    </li>
-                    <div class="clearfix"> </div>
-                  </ul>
+                <div class="testimonial">
+                    <div class="row testimonial_top">
+                        <div class="col-md-6">
+                            <ul class="test_box">
+                                <li class="test_img"><img src="https://picsum.photos/200/200?p=1" class="img-responsive"
+                                        alt="" /> </li>
+                                <li class="test_desc">
+                                    <h4><a href="#">程工 Java工程师</a></h4>
+                                    <p>9年开发工作经验,精通java,具有spring全家桶开发功能经验,曾就职于北京某大厂,具有丰富的开发经验、性能优化、高并发、架构设计、大数据等技术栈.</p>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="test_box">
+                                <li class="test_img"><img src="https://picsum.photos/200/200?p=2" class="img-responsive"
+                                        alt="" /> </li>
+                                <li class="test_desc">
+                                    <h4><a href="#">张工 Java工程师</a></h4>
+                                    <p>7年开发工作经验,精通java,具有spring全家桶开发功能经验,目前就职于武汉某大厂,能胜任目前所有类型开发.</p>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row testimonial_top">
+                        <div class="col-md-6">
+                            <ul class="test_box">
+                                <li class="test_img"><img src="https://picsum.photos/200/200?p=3" class="img-responsive"
+                                        alt="" /> </li>
+                                <li class="test_desc">
+                                    <h4><a href="#">周工 PHP工程师</a></h4>
+                                    <p>12年开发工作经验,精通php,最早一批互联网开发者,熟悉各开发项目经验,资深大佬.</p>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="test_box">
+                                <li class="test_img"><img src="https://picsum.photos/200/200?p=4" class="img-responsive"
+                                        alt="" /> </li>
+                                <li class="test_desc">
+                                    <h4><a href="#">王工 全栈工程师</a></h4>
+                                    <p>11年开发工作经验,精通互联网开发各类型技术,专制于研究各项新技术开发，层任职于某大厂资深开发工程师、精通 JavaScript
+                                        开发，对JavaScrip的原型机制有特别的研究和见解。精通常见的 JavaScript 开发框架与 JavaScript 库，包含 Vue、React
+                                        、jQuery 等技术.</p>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row testimonial_bottom">
+                        <div class="col-md-6">
+                            <ul class="test_box">
+                                <li class="test_img"><img src="https://picsum.photos/200/200?p=5" class="img-responsive"
+                                        alt="" /> </li>
+                                <li class="test_desc">
+                                    <h4><a href="#">廖工 移动端工程师</a></h4>
+                                    <p>9年开发工作经验,熟悉flutter、reactnative、uniapp、原生开发等各种移动端开发经验.</p>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="test_box">
+                                <li class="test_img"><img src="https://picsum.photos/200/200?p=6" class="img-responsive"
+                                        alt="" /> </li>
+                                <li class="test_desc">
+                                    <h4><a href="#">蒋工 移动端工程师</a></h4>
+                                    <p>11年开发工作经验,熟悉各移动端开发，目前致力于鸿蒙系统，经验丰富开发工程师.</p>
+                                </li>
+                                <div class="clearfix"> </div>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="row testimonial_top">
-                <div class="col-md-6">
-                  <ul class="test_box">
-                    <li class="test_img"><img src="https://picsum.photos/200/200?p=3" class="img-responsive" alt=""/> </li>
-                    <li class="test_desc">
-                      <h4><a href="#">周工 PHP工程师</a></h4>
-                      <p>12年开发工作经验,精通php,最早一批互联网开发者,熟悉各开发项目经验,资深大佬.</p>
-                    </li>
-                    <div class="clearfix"> </div>
-                  </ul>
-                </div>
-                <div class="col-md-6">
-                  <ul class="test_box">
-                    <li class="test_img"><img src="https://picsum.photos/200/200?p=4" class="img-responsive" alt=""/> </li>
-                    <li class="test_desc">
-                      <h4><a href="#">王工 全栈工程师</a></h4>
-                      <p>11年开发工作经验,精通互联网开发各类型技术,专制于研究各项新技术开发，层任职于某大厂资深开发工程师、精通 JavaScript 开发，对JavaScrip的原型机制有特别的研究和见解。精通常见的 JavaScript 开发框架与 JavaScript 库，包含 Vue、React 、jQuery 等技术.</p>
-                    </li>
-                    <div class="clearfix"> </div>
-                  </ul>
-                </div>
-              </div>
-              <div class="row testimonial_bottom">
-                  <div class="col-md-6">
-                    <ul class="test_box">
-                      <li class="test_img"><img src="https://picsum.photos/200/200?p=5" class="img-responsive" alt=""/> </li>
-                      <li class="test_desc">
-                        <h4><a href="#">廖工 移动端工程师</a></h4>
-                        <p>9年开发工作经验,熟悉flutter、reactnative、uniapp、原生开发等各种移动端开发经验.</p>
-                      </li>
-                      <div class="clearfix"> </div>
-                    </ul>
-                  </div>
-                  <div class="col-md-6">
-                    <ul class="test_box">
-                      <li class="test_img"><img src="https://picsum.photos/200/200?p=6" class="img-responsive" alt=""/> </li>
-                      <li class="test_desc">
-                        <h4><a href="#">蒋工 移动端工程师</a></h4>
-                        <p>11年开发工作经验,熟悉各移动端开发，目前致力于鸿蒙系统，经验丰富开发工程师.</p>
-                      </li>
-                      <div class="clearfix"> </div>
-                    </ul>
-                  </div>
-            </div>
-          </div>
 
-        <div class="footer">
-            <div class="footer_midle">
-              <div class='container' id="contact">
-                <div class="row">
-                  <div class="col-md-3">
-                    <ul class="social_left">
-                      <li class="facebook"><a href="#"><i class="fa fa-wechat fa-3x"></i></a></li>
-                      <li class="fb_text">
-                        <h4><a href="#">关注我们微信</a></h4>
-                      </li>
-                      <div class="clearfix"> </div>
-                    </ul>
-                  </div>
-                  <div class="col-md-3">
-                    <ul class="social_left">
-                      <li class="facebook"><a href="#"><i class="fa fa-send fa-3x"></i></a></li>
-                      <li class="fb_text">
-                        <h4><a href="#">关注我们邮箱</a></h4>
-                      </li>
-                      <div class="clearfix"> </div>
-                    </ul>
-                  </div>
-                  <div class="col-md-3">
-                    <ul class="social_left">
-                      <li class="facebook"><a href="#"><i class="fa fa-phone-square fa-3x"></i></a></li>
-                      <li class="fb_text">
-                        <h4><a href="#">联系我们电话</a></h4>
-                      </li>
-                      <div class="clearfix"> </div>
-                    </ul>
-                  </div>
-                  <div class="col-md-3">
-                    <ul class="social_left">
-                      <li class="facebook"><a href="#"><i class="fa fa-map-marker fa-3x"></i></a></li>
-                      <li class="fb_text">
-                        <h4><a href="#">查看我们位置</a></h4>
-                      </li>
-                      <div class="clearfix"> </div>
-                    </ul>
-                  </div>
+                <div class="footer">
+                    <div class="footer_midle">
+                        <div class='container' id="contact">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <ul class="social_left">
+                                        <li class="facebook"><a href="#"><i class="fa fa-wechat fa-3x"></i></a></li>
+                                        <li class="fb_text">
+                                            <h4><a href="#">关注我们微信</a></h4>
+                                        </li>
+                                        <div class="clearfix"> </div>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul class="social_left">
+                                        <li class="facebook"><a href="#"><i class="fa fa-send fa-3x"></i></a></li>
+                                        <li class="fb_text">
+                                            <h4><a href="#">关注我们邮箱</a></h4>
+                                        </li>
+                                        <div class="clearfix"> </div>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul class="social_left">
+                                        <li class="facebook"><a href="#"><i class="fa fa-phone-square fa-3x"></i></a>
+                                        </li>
+                                        <li class="fb_text">
+                                            <h4><a href="#">联系我们电话</a></h4>
+                                        </li>
+                                        <div class="clearfix"> </div>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <ul class="social_left">
+                                        <li class="facebook"><a href="#"><i class="fa fa-map-marker fa-3x"></i></a></li>
+                                        <li class="fb_text">
+                                            <h4><a href="#">查看我们位置</a></h4>
+                                        </li>
+                                        <div class="clearfix"> </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer_bottom">
+                        <div class="copy">
+                            <p>Copyright &copy; 2012.Company name All rights reserved.<a target="_blank"
+                                    href="index.html">武汉慕容软件科技有限公司</a></p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="footer_bottom">
-              <div class="copy">
-                <p>Copyright &copy; 2012.Company name All rights reserved.<a target="_blank" href="index.html">武汉慕容软件科技有限公司</a></p>
-              </div>
             </div>
         </div>
     </div>

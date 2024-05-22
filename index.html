@@ -10,85 +10,201 @@
     <title>welcome to wattley's place!</title>
     <script>window.times = +(new Date)</script>
     <script>document.write(`<script src="./static/common/common.js?v=0.0.1&t=${times}"><\/script>`)</script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(".scroll").click(function(event){
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+            });
+        });
+    </script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href='http://fonts.useso.com/css?family=Source+Sans+Pro:200,300,400,600,700,900' rel='stylesheet' type='text/css'>
+
+    
 </head>
 
 <body>
     <div>
-        <script>appendCode(`<script src="./temp/NavHtml.js?v=0.0.1&t=${times}"><\/script>`);</script>
+        <!-- <script>appendCode(`<script src="./temp/NavHtml.js?v=0.0.1&t=${times}"><\/script>`);</script> -->
         <div class="header">
-            <div
-                class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1">
-                <div class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
-                    aria-hidden="true">
-                    <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
-                        style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)">
-                    </div>
-                </div>
-                <div class="absolute left-[max(45rem,calc(50%+8rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
-                    aria-hidden="true">
-                    <div class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
-                        style="clip-path: polygon(74.8% 41.9%, 97.2% 73.2%, 100% 34.9%, 92.5% 0.4%, 87.5% 0%, 75% 28.6%, 58.5% 54.6%, 50.1% 56.8%, 46.9% 44%, 48.3% 17.4%, 24.7% 53.9%, 0% 27.9%, 11.9% 74.2%, 24.9% 54.1%, 68.6% 100%, 74.8% 41.9%)">
-                    </div>
-                </div>
-                <div class="flex flex-wrap items-center gap-x-4 gap-y-2">
-                    <p class="text-sm leading-6 text-gray-900">
-                        <strong class="font-semibold">GeneriCon 2023</strong><svg viewBox="0 0 2 2"
-                            class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
-                            <circle cx="1" cy="1" r="1" />
-                        </svg>Join us in Denver from June 7 – 9 to see what’s coming next.
-                    </p>
-                    <a href="#"
-                        class="flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900">Register
-                        now <span aria-hidden="true">&rarr;</span></a>
-                </div>
-                <div class="flex flex-1 justify-end">
-                    <button type="button" class="-m-3 p-3 focus-visible:outline-offset-[-4px]">
-                        <span class="sr-only">Dismiss</span>
-                        <svg class="h-5 w-5 text-gray-900" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-                            <path
-                                d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z" />
-                        </svg>
-                    </button>
-                </div>
+            <div class="container">
+              <div class="logo"> <a href="/index.html"><img src="./static/images/logo.png" alt="Nova"></a> </div>
+              <div class="menu"> <a class="toggleMenu" href="#"><img src="./static/images/nav_icon.png" alt="" /> </a>
+                <ul class="nav" id="nav">
+                  <li class="current"><a href="/index.html">公司团队</a></li>
+                  <li><a href="#about">关于我们</a></li>
+                  <li><a href="#services">小伙伴们</a></li>
+                  <!-- <li><a href="blog.html">项目介绍</a></li> -->
+                  <li><a href="#contact">联系我们</a></li>
+                  <div class="clear"></div>
+                </ul>
+                <script>appendCode(`<script src="./static/common/responsive-nav.js?v=0.0.1&t=${times}"><\/script>`);</script>
+              </div>
+              <div class="clearfix"> </div>
             </div>
         </div>
-        <div class="container mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div class="content">
-                <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-                    <div>
-                        <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
-                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><!-- ... --></svg>
-                        </span>
-                    </div>
-                    <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Writes
-                        Upside-Down
-                    </h3>
-                    <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-                        The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even
-                        works
-                        in outer space.
-                    </p>
+        
+        <div class="banner text-center">
+            <div class="container">
+              <div class="banner-info">
+                <h1>武汉慕容软件科技有限公司</h1>
+                <p>专业互联网10+年开发各类型项目案例.<br>
+                  人工智能、物联网、sass云服务、商城开发</p>
+                <label class="page-scroll"><a class="banner-btn class scroll" href="#feature"><i class="fa fa-angle-double-down fa-4x"></i></a></label>
+              </div>
+            </div>
+          </div>
+          <div class="main" style="user-select: none;">
+          <div class="content_white" id="about">
+            <h2>关于我们</h2>
+            <p>致力于各种开发语言 上十位开发小伙伴一起为您服务.</p>
+          </div>
+          <div class="featured_content" id="feature">
+            <div class="container">
+              <div class="row text-center">
+                <div class="col-md-3 feature_grid1"> <i class="fa fa-cloud-download fa-3x"></i>
+                  <h3 class="m_1"><a href="#">JAVA</a></h3>
+                  <p class="m_2">springbootX、springcloud、Mybatisplus.</p>
+                  <a href="#" class="feature_btn">More</a> </div>
+                <div class="col-md-3 feature_grid1"> <i class="fa fa-shield fa-3x"></i>
+                  <h3 class="m_1"><a href="#">PHP</a></h3>
+                  <p class="m_2">Thinkphp6.X、Laravel6、swoole、composer.</p>
+                  <a href="#" class="feature_btn">More</a> </div>
+                <div class="col-md-3 feature_grid1"> <i class="fa fa-flask fa-3x"></i>
+                  <h3 class="m_1"><a href="#">JAVSCRIPT</a></h3>
+                  <p class="m_2">Vue、React、es6、html5+css3、小程序.</p>
+                  <a href="#" class="feature_btn">More</a> </div>
+                <div class="col-md-3 feature_grid2"> <i class="fa fa-bar-chart fa-3x"></i>
+                  <h3 class="m_1"><a href="#">FLUTTER</a></h3>
+                  <p class="m_2">Uniapp、IOS、Android、ReactNative.</p>
+                  <a href="#" class="feature_btn">More</a> </div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="content_white" id="services">
+              <h2>开发小伙伴们</h2>
+              <!-- <p>No cum agam appareat vituperata ateum iusto paulo dignissim</p> -->
+            </div>
+            <div class="testimonial">
+              <div class="row testimonial_top">
+                <div class="col-md-6">
+                  <ul class="test_box">
+                    <li class="test_img"><img src="https://picsum.photos/200/200?p=1" class="img-responsive" alt=""/> </li>
+                    <li class="test_desc">
+                      <h4><a href="#">程工 Java工程师</a></h4>
+                      <p>9年开发工作经验,精通java,具有spring全家桶开发功能经验,曾就职于北京某大厂,具有丰富的开发经验、性能优化、高并发、架构设计、大数据等技术栈.</p>
+                    </li>
+                    <div class="clearfix"> </div>
+                  </ul>
                 </div>
-                <div class="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
-                    <div>
-                        <span class="inline-flex items-center justify-center p-2 bg-indigo-500 rounded-md shadow-lg">
-                            <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><!-- ... --></svg>
-                        </span>
-                    </div>
-                    <h3 class="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Writes
-                        Upside-Down
-                    </h3>
-                    <p class="text-slate-500 dark:text-slate-400 mt-2 text-sm">
-                        The Zero Gravity Pen can be used to write in any orientation, including upside-down. It even
-                        works
-                        in outer space.
-                    </p>
+                <div class="col-md-6">
+                  <ul class="test_box">
+                    <li class="test_img"><img src="https://picsum.photos/200/200?p=2" class="img-responsive" alt=""/> </li>
+                    <li class="test_desc">
+                      <h4><a href="#">张工 Java工程师</a></h4>
+                      <p>7年开发工作经验,精通java,具有spring全家桶开发功能经验,目前就职于武汉某大厂,能胜任目前所有类型开发.</p>
+                    </li>
+                    <div class="clearfix"> </div>
+                  </ul>
                 </div>
+              </div>
+              <div class="row testimonial_top">
+                <div class="col-md-6">
+                  <ul class="test_box">
+                    <li class="test_img"><img src="https://picsum.photos/200/200?p=3" class="img-responsive" alt=""/> </li>
+                    <li class="test_desc">
+                      <h4><a href="#">周工 PHP工程师</a></h4>
+                      <p>12年开发工作经验,精通php,最早一批互联网开发者,熟悉各开发项目经验,资深大佬.</p>
+                    </li>
+                    <div class="clearfix"> </div>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="test_box">
+                    <li class="test_img"><img src="https://picsum.photos/200/200?p=4" class="img-responsive" alt=""/> </li>
+                    <li class="test_desc">
+                      <h4><a href="#">王工 全栈工程师</a></h4>
+                      <p>11年开发工作经验,精通互联网开发各类型技术,专制于研究各项新技术开发，层任职于某大厂资深开发工程师、精通 JavaScript 开发，对JavaScrip的原型机制有特别的研究和见解。精通常见的 JavaScript 开发框架与 JavaScript 库，包含 Vue、React 、jQuery 等技术.</p>
+                    </li>
+                    <div class="clearfix"> </div>
+                  </ul>
+                </div>
+              </div>
+              <div class="row testimonial_bottom">
+                  <div class="col-md-6">
+                    <ul class="test_box">
+                      <li class="test_img"><img src="https://picsum.photos/200/200?p=5" class="img-responsive" alt=""/> </li>
+                      <li class="test_desc">
+                        <h4><a href="#">廖工 移动端工程师</a></h4>
+                        <p>9年开发工作经验,熟悉flutter、reactnative、uniapp、原生开发等各种移动端开发经验.</p>
+                      </li>
+                      <div class="clearfix"> </div>
+                    </ul>
+                  </div>
+                  <div class="col-md-6">
+                    <ul class="test_box">
+                      <li class="test_img"><img src="https://picsum.photos/200/200?p=6" class="img-responsive" alt=""/> </li>
+                      <li class="test_desc">
+                        <h4><a href="#">蒋工 移动端工程师</a></h4>
+                        <p>11年开发工作经验,熟悉各移动端开发，目前致力于鸿蒙系统，经验丰富开发工程师.</p>
+                      </li>
+                      <div class="clearfix"> </div>
+                    </ul>
+                  </div>
+            </div>
+          </div>
+
+        <div class="footer">
+            <div class="footer_midle">
+              <div class='container' id="contact">
+                <div class="row">
+                  <div class="col-md-3">
+                    <ul class="social_left">
+                      <li class="facebook"><a href="#"><i class="fa fa-wechat fa-3x"></i></a></li>
+                      <li class="fb_text">
+                        <h4><a href="#">关注我们微信</a></h4>
+                      </li>
+                      <div class="clearfix"> </div>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <ul class="social_left">
+                      <li class="facebook"><a href="#"><i class="fa fa-send fa-3x"></i></a></li>
+                      <li class="fb_text">
+                        <h4><a href="#">关注我们邮箱</a></h4>
+                      </li>
+                      <div class="clearfix"> </div>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <ul class="social_left">
+                      <li class="facebook"><a href="#"><i class="fa fa-phone-square fa-3x"></i></a></li>
+                      <li class="fb_text">
+                        <h4><a href="#">联系我们电话</a></h4>
+                      </li>
+                      <div class="clearfix"> </div>
+                    </ul>
+                  </div>
+                  <div class="col-md-3">
+                    <ul class="social_left">
+                      <li class="facebook"><a href="#"><i class="fa fa-map-marker fa-3x"></i></a></li>
+                      <li class="fb_text">
+                        <h4><a href="#">查看我们位置</a></h4>
+                      </li>
+                      <div class="clearfix"> </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer_bottom">
+              <div class="copy">
+                <p>Copyright &copy; 2012.Company name All rights reserved.<a target="_blank" href="index.html">武汉慕容软件科技有限公司</a></p>
+              </div>
             </div>
         </div>
-        <div class="footer"></div>
     </div>
 </body>
 
